@@ -1,0 +1,5 @@
+var customCtrlResourcesApi = (function() {
+  var customCtrlResourcesApi = function() {
+    this.basePath = "http://customctrlresources.v5.cmp/v1.0.0";
+  }
+})();

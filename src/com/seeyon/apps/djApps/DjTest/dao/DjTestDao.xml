@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seeyon.apps.djApps.DjTest.dao.DjTestDao">
+
+    <select id="selectAll" resultType="java.util.Map">
+        SELECT * FROM formmain_0027
+    </select>
+
+    <select id="count" resultType="java.lang.Integer">
+        SELECT count(1) FROM formmain_0022
+    </select>
+
+    <insert id="insertTest" parameterType="java.util.Map">
+        INSERT INTO formmain_0022 (ID, field0001, state)
+        VALUES (#{id}, #{field0001}, 1)
+    </insert>
+</mapper>
